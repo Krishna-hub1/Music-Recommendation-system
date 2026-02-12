@@ -1,0 +1,193 @@
+.nowCard {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nowCover {
+  height: 230px;
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(110, 170, 255, 0.35),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 85% 25%,
+      rgba(255, 80, 200, 0.25),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 50% 90%,
+      rgba(0, 255, 210, 0.1),
+      transparent 60%
+    );
+}
+
+.nowGlow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(120, 160, 255, 0.2),
+    rgba(255, 80, 200, 0.15)
+  );
+  filter: blur(18px);
+  opacity: 0.8;
+}
+
+.nowIcon {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  opacity: 0.65;
+  width: 70px;
+  height: 70px;
+}
+
+.nowMeta {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.nowSong {
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.nowArtist {
+  opacity: 0.7;
+  margin-top: 6px;
+}
+
+/* Wave */
+.wave {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  height: 56px;
+  align-items: flex-end;
+}
+
+.wave span {
+  width: 6px;
+  border-radius: 999px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 255, 210, 0.95),
+    rgba(100, 160, 255, 0.6)
+  );
+  animation: wave 0.9s ease-in-out infinite alternate;
+}
+
+@keyframes wave {
+  from {
+    transform: scaleY(0.4);
+  }
+  to {
+    transform: scaleY(1.05);
+  }
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.ctrlBtn {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.ctrlBtn:hover {
+  transform: translateY(-1px);
+}
+
+.ctrlBtn.main {
+  background: rgba(255, 255, 255, 0.92);
+  color: black;
+}
+
+/* Timeline */
+.timeline {
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
+  gap: 12px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.time {
+  font-size: 12px;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.track {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.trackFill {
+  height: 100%;
+  width: 35%;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    rgba(100, 160, 255, 0.75),
+    rgba(255, 80, 200, 0.7)
+  );
+}
+
+/* Bottom actions */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.actionBtn {
+  width: 54px;
+  height: 46px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.actionBtn:hover {
+  transform: translateY(-1px);
+}
+
+.actionBtn.heartActive {
+  color: rgba(255, 80, 180, 1);
+  border-color: rgba(255, 80, 180, 0.35);
+  background: rgba(255, 80, 180, 0.08);
+}
+
+.note {
+  margin-top: 14px;
+  text-align: center;
+  opacity: 0.65;
+  font-size: 13px;
+}
