@@ -1,8 +1,0 @@
-flask
-flask-cors
-pandas
-openpyxl
-scikit-learn
-numpy
-fuzzywuzzy
-python-Levenshtein
