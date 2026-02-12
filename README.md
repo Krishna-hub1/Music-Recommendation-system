@@ -1,101 +1,78 @@
-🎵 Music Recommendation System (Full Stack)
+# 🎵 Music Recommendation System
 
-A full-stack Music Recommendation Web App that allows users to search songs and get music recommendations.
-Built with a modern frontend and a Flask backend, this project demonstrates real-world skills like API integration, UI component design, backend routing, and recommendation logic.
+A full-stack **Music Recommendation Web App** built using **React** (Frontend) and **Python Flask** (Backend).  
+This project allows users to **search songs** and get **recommended songs** using backend API endpoints.
 
-🚀 Features
+---
 
-✅ Search songs instantly
-✅ Get music recommendations based on search
-✅ Clean UI with Left Panel + Right Panel layout
-✅ Flask backend API integration
-✅ Modular frontend structure
-✅ Easy to run locally
+## 🚀 Features
 
-🛠️ Tech Stack
-Frontend
+- 🔍 Search songs instantly
+- 🎯 Get music recommendations
+- 🧩 Modular UI (LeftPanel + RightPanel)
+- ⚡ React + Flask API integration
+- 🧼 Clean project structure
 
-React.js
+---
 
-JavaScript
+## 🛠️ Technologies Used
 
-HTML5 + CSS3
+- **React**
+- **JavaScript**
+- **HTML / CSS**
+- **Python**
+- **Flask**
+- **REST API**
 
-Backend
+---
 
-Python
-
-Flask
-
-REST API
+```bash
 
 
 ⚙️ Installation & Setup
-1️⃣ Clone the repository
+1) Clone the repository
 git clone https://github.com/Krishna-hub1/music-recommendation-system.git
 cd music-recommendation-system
 
-🖥️ Backend Setup (Flask)
-2️⃣ Go to backend folder
+🐍 Backend Setup (Flask)
+
+2) Go to backend folder
 cd backend
 
-3️⃣ Create virtual environment
-python -m venv venv
-
-4️⃣ Activate environment
-Windows
-venv\Scripts\activate
-
-Mac/Linux
-source venv/bin/activate
-
-5️⃣ Install dependencies
+3) Install dependencies
 pip install -r requirements.txt
 
-6️⃣ Run Flask server
+4) Run backend server
 python app.py
-
 
 Backend runs on:
 
 http://127.0.0.1:5000
 
-🌐 Frontend Setup (React)
-7️⃣ Go to frontend folder
+⚛️ Frontend Setup (React)
+1) Go to frontend folder
 cd ../frontend
 
-8️⃣ Install packages
+2) Install packages
 npm install
 
-9️⃣ Start React app
+4) Run frontend
 npm run dev
-
 
 Frontend runs on:
 
 http://localhost:5173
 
 🔗 API Endpoints
-🔍 Search Songs
+Endpoint	Method	Description
+/search?song=<song_name>	GET	Search songs
+/recommend?song=<song_name>	GET	Get recommendations
 
-GET
+🧠 How It Works
+User searches for a song from the React UI
 
-/search?song=<song_name>
+React sends a request to Flask using src/lib/api.js
 
-🎯 Get Recommendations
+Flask processes the request and returns results
 
-GET
-
-/recommend?song=<song_name>
-
-📌 How It Works
-
-User searches for a song from the UI
-
-Frontend calls backend API using api.js
-
-Flask receives request and processes the song query
-
-Recommendation logic returns a list of similar songs
-
-UI displays the results on the right panel
+UI displays searched songs and recommended songs
